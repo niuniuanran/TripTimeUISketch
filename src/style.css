@@ -33,7 +33,7 @@ body {
     align-items: flex-end;
     justify-content: space-evenly;
     top: 5vh;
-    right:calc(80vw + 2px);
+    right:calc(85vw + 2px);
     min-height: 75vh;
     z-index: 2;
     font-size: 2vmax;
@@ -68,11 +68,11 @@ body {
 
 .page-body {
     height: 100vh;
-    width: 80vw;
+    width: 85vw;
     position: fixed;
-    left: 20vw;
+    left: 15vw;
     border-left: solid 1px #eee;
     box-shadow: -2px 1px 2px #aaa;
-    background-color: #f3f3f3;
+    background-color: #fdf5ef;
     z-index: 1;
 }
