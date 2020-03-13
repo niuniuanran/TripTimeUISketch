@@ -36,7 +36,8 @@ div{
     width: 11vw;
 }
 .nav-span {
-    padding-left: 2vmax;
+    padding-left: 1vmax;
+    pointer-events: none;
 }
 .top-bar {
     position: fixed;

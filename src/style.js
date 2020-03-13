@@ -42,8 +42,18 @@ window.onload = function () {
             document.documentElement.style.setProperty('--page-background-color', colorCombos[i].page_background_color);
             document.documentElement.style.setProperty('--page-border-color', colorCombos[i].page_border_color);
             document.documentElement.style.setProperty('--box-shadow-color', colorCombos[i].box_shadow_color);
-
         })
     }
+
+
+    const tags = document.querySelectorAll(".page-tag");
+
+    tags.forEach(tag => {
+        tag.addEventListener("click", function (e) {
+            tags.forEach(inactive=> {inactive.classList.remove("active")});
+            e.target.classList.add("active");
+
+        })
+    });
 
 };
