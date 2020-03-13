@@ -8,22 +8,24 @@ body {
 }
 
 :root {
+    --page-body-width: 82vw;
     --calendar-color: #ebd35e;
     --map-color: #efaf7c;
     --dashboard-color: #e67575;
     --chat-color: #41ad9b;
     --tools-color: #8bc9c3;
-    --text-gray: #404040;
+    --text-gray: #505045;
     --decor-font-family: 'Fredericka the Great', cursive;
 }
 
 .page-tag {
     border-bottom: 12vh solid;
     border-left: 1vw solid transparent;
-    /*border-right: 25px solid transparent;*/
     height: 0;
     width: 11vw;
-    /*border-top-left-radius: 10px;*/
+}
+.nav-span {
+    padding-left: 2vmax;
 }
 
 .page-tags{
@@ -33,10 +35,10 @@ body {
     align-items: flex-end;
     justify-content: space-evenly;
     top: 5vh;
-    right:calc(85vw + 2px);
+    right:calc(var(--page-body-width) + 2px);
     min-height: 75vh;
     z-index: 2;
-    font-size: 2vmax;
+    font-size: 1.6vmax;
     line-height: 12vh;
     font-family: var(--decor-font-family);
 
@@ -62,15 +64,15 @@ body {
     margin-bottom: 3vh;
 }
 .active {
-    left: 1vw;
-    width: 14vw;
+    left: 2vw;
+    width: 15vw;
 }
 
 .page-body {
     height: 100vh;
-    width: 85vw;
+    width: var(--page-body-width);
     position: fixed;
-    left: 15vw;
+    left: calc(100vw - var(--page-body-width));
     border-left: solid 1px #eee;
     box-shadow: -2px 1px 2px #aaa;
     background-color: #fdf5ef;
