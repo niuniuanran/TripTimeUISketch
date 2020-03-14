@@ -19,7 +19,7 @@ div{
     --dashboard-color: #e67575;
     --fun-3-color: #41ad9b;
     --fun-4-color: #8bc9c3;
-    --primary-text-color: #505045;
+    --primary-text-color: #111112;
     --info-text-color: #232322;
     --outer-background-color: #f4f4f1;
     --page-background-color: #fdf5ef;
@@ -34,6 +34,7 @@ div{
     border-left: 1vw solid transparent;
     height: 0;
     width: 11vw;
+    cursor: pointer;
 }
 .nav-span {
     padding-left: 1vmax;
@@ -52,6 +53,7 @@ div{
     align-items: center;
     justify-content: space-between;
     padding: 0 15px 0 5vw;
+
 }
 
 .page-tags{
