@@ -6,7 +6,7 @@ const colorCombos = [
         fun3_color: "#41ad9b",
         fun4_color: "#8bc9c3",
 
-        primary_text_color: "#111112",
+        primary_text_color: "#000",
         info_text_color: "#232322",
         outer_background_color: "#f4f4f1",
         page_background_color: "#fdf5ef",
@@ -19,7 +19,7 @@ const colorCombos = [
         fun2_color: "#ffe25e",
         fun3_color: "#fce783",
         fun4_color: "#fff9c7",
-        primary_text_color: "#111112",
+        primary_text_color: "#000",
         info_text_color: "#f1f1e0",
         outer_background_color: "#787878",
         page_background_color: "#232322",
