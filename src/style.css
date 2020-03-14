@@ -18,26 +18,30 @@ div{
     --fun-1-color: #efaf7c;
     --dashboard-color: #e67575;
     --fun-3-color: #41ad9b;
-    --fun-4-color: #8bc9c3;
+    --fun-4-color: #abc9c3;
     --primary-text-color: #010100;
     --info-text-color: #232322;
-    --outer-background-color: #f4f4f1;
-    --page-background-color: #fdf5ef;
+    --outer-background-color: #fefefe;
+    --page-background-color: #f5f5f2;
     --page-border-color: #eee;
     --box-shadow-color: #aaa;
     --decor-font-family: 'Fredericka the Great', cursive;
+    --tag-opacity: 0.15;
+    --tag-background-color: white;
 
 }
 
 .page-tag {
-    border-bottom: 12vh solid;
-    border-left: 1vw solid transparent;
-    height: 0;
-    width: 11vw;
+    /*border-bottom: 11vh solid;*/
+    /*border-left: 1vw solid transparent;*/
+    height: 11vh;
+    width: 11.5vw;
     cursor: pointer;
 }
+
+
 .nav-span {
-    padding-left: 1vmax;
+    padding-left: 2vmax;
     pointer-events: none;
 }
 .top-bar {
@@ -54,7 +58,6 @@ div{
     justify-content: space-between;
     padding: 0 15px 0 5vw;
     font-size: larger;
-
 }
 
 .page-tags{
@@ -68,28 +71,56 @@ div{
     min-height: 75vh;
     z-index: 2;
     font-size: 1.6vmax;
-    line-height: 12vh;
+    line-height: 11vh;
     font-family: var(--decor-font-family);
+    color: var(--primary-text-color);
 }
 .page-tag{
     position: relative;
     box-shadow: 1px 2px 1px var(--box-shadow-color);
+    color: var(--primary-text-color);
 }
-#calendar-tag {
-    border-bottom-color: var(--fun-2-color);
+
+#calendar-tag .tag-background-img{
+    background: url("../asset/calender-tag.jpg");
+    /*!*    Photo by Estée Janssens on Unsplash *!*/
 }
-#chat-tag {
-    border-bottom-color: var(--fun-3-color);
+#calendar-tag .tag-background {
+    background-color: var(--fun-2-color);
 }
-#tools-tag {
-    border-bottom-color: var(--fun-4-color);
+
+#chat-tag .tag-background{
+    background-color: var(--fun-1-color);
 }
-#map-tag {
-    border-bottom-color: var(--fun-1-color);
+#chat-tag .tag-background-img {
+    background: url("../asset/chat-tag.jpg");
+/*    Photo by Debby Hudson on Unsplash*/
 }
+#tools-tag .tag-background {
+    background-color: var(--fun-4-color);
+}
+#tools-tag .tag-background-img {
+    background: url("../asset/tools-tag.jpg");
+    /*Photo by AbsolutVision on Unsplash*/
+}
+#map-tag .tag-background{
+    background-color: var(--fun-3-color);
+}
+#map-tag .tag-background-img {
+    background: url("../asset/map-tag.jpg");
+/*Photo by Bryan Trogdon on Unsplash*/
+}
+
 #dashboard-tag {
-    border-bottom-color: var(--dashboard-color);
     margin-bottom: 3vh;
+}
+#dashboard-tag .tag-background {
+    background-color: var(--dashboard-color);
+}
+
+#dashboard-tag .tag-background-img {
+    background: url("../asset/dashboard-tag.jpg");
+/*    Photo by Nick Abrams on Unsplash*/
 }
 .active {
     left: 2vw;
@@ -118,3 +149,28 @@ div{
     width: 200px;
     color: white;
 }
+
+.tag-background-img {
+    opacity: var(--tag-opacity);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.tag-background {
+    background-color: var(--tag-background-color);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+
+
+
