@@ -28,7 +28,8 @@ const colorCombos = [
     // }
 ];
 
-window.onload = function () {
+window.addEventListener("load", function () {
+
     // for (let i = 0; i < 2; i++) {
     //     const currButton = document.querySelector(`#color-button-${i}`);
     //     currButton.addEventListener("click", function () {
@@ -49,10 +50,12 @@ window.onload = function () {
 
     tags.forEach(tag => {
         tag.addEventListener("click", function (e) {
-            tags.forEach(inactive=> {inactive.classList.remove("active")});
+            tags.forEach(inactive => {
+                inactive.classList.remove("active")
+            });
             e.target.classList.add("active");
 
-        })
-    });
+        })}
+    )
+});
 
-};

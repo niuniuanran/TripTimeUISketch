@@ -26,8 +26,10 @@ div{
     --page-border-color: #eee;
     --box-shadow-color: #aaa;
     --decor-font-family: 'Fredericka the Great', cursive;
+    --read-font-family: 'Tajawal', sans-serif;
     --tag-opacity: 0.15;
     --tag-background-color: white;
+    --map-pin-color: orangered;
 
 }
 
@@ -172,5 +174,76 @@ div{
 }
 
 
+.page-body {
+    font-family: var(--read-font-family);
+}
+
+.inactive-page{
+    display: none;
+}
+.active-page {
+    display: grid;
+}
+
+#map-page {
+    position: relative;
+    grid-template-columns: 50vmax 1fr;
+}
+
+#map-container, .info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#map {
+    width: 80%;
+    height: 80%;
+    border-top: var(--fun-3-color) 4px dotted;
+    border-bottom: var(--fun-3-color) 4px dotted;
+
+    position: relative;
+}
+
+#map-img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+
+.map-pin-icon {
+    font-size: 1.5vmax;
+    color: var(--map-pin-color);
+    cursor: pointer;
+}
+
+.map-pin-bubble {
+    position: absolute;
+    border: 2px solid var(--map-pin-color);
+    border-radius: 50%;
+    width: 3vmax;
+    height: 3vmax;
+    text-align: center;
+    background-color: rgba(256,256,256,0.7);
+    line-height: 3.3vmax;
+}
+
+.map-pin-bubble::after{
+    content:"";
+    width: 0;
+    position: absolute;
+    top: 2.9vmax;
+    left: 50%;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 1.5vmax solid var(--map-pin-color);
+}
+
+.place-name {
+    padding-left: 5px;
+}
 
 
