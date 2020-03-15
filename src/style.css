@@ -247,3 +247,23 @@ div{
 }
 
 
+.sticky-note {
+    border: 1px var(--page-border-color);
+    background-color: var(--fun-2-color);
+    box-shadow: var(--box-shadow-color) 1px 1px 1px;
+    height: 15vmax;
+    width: 15vmax;
+    padding-top: 2vmax;
+    position: absolute;
+    left: 10vmax;
+    top:10vmax;
+}
+
+.info-container {
+    position: relative;
+    pointer-events: none;
+}
+
+.page-body {
+    pointer-events: none;
+}
