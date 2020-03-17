@@ -63,7 +63,6 @@ div{
 }
 
 .page-tags{
-    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -81,11 +80,13 @@ div{
     position: relative;
     box-shadow: 1px 2px 1px var(--box-shadow-color);
     color: var(--primary-text-color);
+    border-radius: 15px 3px 3px 15px;
 }
 
 #calendar-tag .tag-background-img{
     background: url("../asset/calender-tag.jpg");
     /*!*    Photo by Estée Janssens on Unsplash *!*/
+
 }
 #calendar-tag .tag-background {
     background-color: var(--fun-2-color);
@@ -160,9 +161,11 @@ div{
     right: 0;
     position: absolute;
     z-index: -1;
+    border-radius: 15px 3px 3px 15px;
 }
 
 .tag-background {
+    border-radius: 15px 3px 3px 15px;
     background-color: var(--tag-background-color);
     top: 0;
     left: 0;
@@ -247,20 +250,26 @@ div{
     padding-left: 5px;
 }
 
-
 .sticky-note {
     border: 1px var(--page-border-color);
-    background-color: var(--fun-2-color);
     box-shadow: var(--box-shadow-color) 1px 1px 1px;
     max-height: 90%;
     width: 18vmax;
     padding: 2vmax 0.5vmax 2vmax 0.5vmax;
-    position: absolute;
-    left: 10vmax;
 }
 
-.info-container {
-    position: relative;
+.map-sticky-note {
+    background-color: var(--fun-3-color);
+}
+
+
+.added-notes-container {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.map-info-table {
+    height: 7em;
 }
 
 
