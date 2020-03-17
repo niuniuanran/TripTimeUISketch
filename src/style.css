@@ -160,7 +160,6 @@ div{
     right: 0;
     position: absolute;
     z-index: -1;
-
 }
 
 .tag-background {
@@ -253,14 +252,15 @@ div{
     border: 1px var(--page-border-color);
     background-color: var(--fun-2-color);
     box-shadow: var(--box-shadow-color) 1px 1px 1px;
-    height: fit-content;
+    max-height: 90%;
     width: 18vmax;
     padding: 2vmax 0.5vmax 2vmax 0.5vmax;
     position: absolute;
     left: 10vmax;
-    top:10vmax;
 }
 
 .info-container {
     position: relative;
 }
+
+

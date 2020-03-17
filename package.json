@@ -1,0 +1,25 @@
+{
+  "name": "triptimeuisketch",
+  "version": "1.0.0",
+  "description": "ui sketch",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwind build src/tailwind-src.css -o dist/tailwind-built.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niuniuanran/TripTimeUISketch.git"
+  },
+  "keywords": [
+    "sketch"
+  ],
+  "author": "anran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niuniuanran/TripTimeUISketch/issues"
+  },
+  "homepage": "https://github.com/niuniuanran/TripTimeUISketch#readme",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  }
+}

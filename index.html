@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="m-0 p-0">
 <head>
     <meta charset="UTF-8">
     <title>TripTime: planning your next adventure</title>
@@ -10,8 +10,10 @@
           rel="stylesheet">
     <script src="./src/style.js"></script>
     <script src="./src/draggable.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/tailwind-built.css">
 </head>
-<body>
+<body class="m-0 p-0 relative">
 
 <!--<div class="test-panel">-->
 <!--    Hi Rafi and Shakeel can you have a look which color you'd prefer?<br>-->
@@ -25,7 +27,7 @@
     <span class="top-bar-span">Some | top | bar | items</span>
 </div>
 
-<div class="nav-bar page-tags">
+<div class="nav-bar page-tags fixed">
     <div class="page-tag index-tag" id="dashboard-tag">
         <span class="nav-span">Dashboard</span>
         <div class="tag-background-img"></div>
@@ -77,24 +79,48 @@
     <div class="info-container">
 
         <div class="map-place-info map-sticky-note sticky-note">
-            <table class="map-info-table">
+            <table class="map-info-table basic-info">
                 <thead class="map-info-thead">
                 <tr class="map-info-head-row place-info">
                     <th><i class="fas fa-hiking place-icon"></i><span class="place-name">Customer place name</span></th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr class="place-time place-info"><td>4/3/2020 8:00 am<td></tr>
-                <tr class="place-people"><td>Mary, Peter and Tom are going</td></tr>
-                <tr><td><label> Add notes here
-                    <input type="text">
-                </label></td></tr>
+                <tr class="place-time place-info">
+                    <td>4/3/2020 8:00 am
+                    <td>
+                </tr>
+                <tr class="place-people">
+                    <td>Mary, Peter and Tom are going</td>
+                </tr>
                 </tbody>
             </table>
-        </div>
+            <div class="added-notes-container map-added-notes-container">
+                <div class="added-note map-added-note m-3">
+                    <div class="added-note-author map-added-note-author">
+                        Alice:
+                    </div>
+                    <div class="added-note-content map-added-note-content">
+                  These notes will be fetched from the database and rendered here
 
+                    </div>
+                    <div class="added-note map-added-note">
+                        <div class="added-note-author map-added-note-author">
+                            <span class="inline-avatar-span"></span> Bob
+                        </div>
+                        <div class="added-note-content map-added-note-content">
+                            We will drive two cars to each of the end.
+                            d it to make a type specimen book. It has survived not only five centuries, but also the
+                            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
 
 </body>
 </html>
