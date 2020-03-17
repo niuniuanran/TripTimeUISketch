@@ -7519,6 +7519,10 @@ video {
   border-top: 1.5vmax solid var(--trip-orange);
 }
 
+.trip-orange-gradient-left{
+  background: linear-gradient(90deg, rgba(255, 68, 0, 0.7), #f5f5f5 90%);
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
@@ -34978,4 +34982,3 @@ video {
     transition-duration: 1000ms;
   }
 }
-
