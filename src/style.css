@@ -198,8 +198,3 @@
     height: 7em;
 }
 
-.trip-orange-gradient-left{
-    background: linear-gradient(70deg, var(--trip-orange) 3%, #f5f5f5);
-    opacity: 60%;
-
-}

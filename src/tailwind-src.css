@@ -36,3 +36,6 @@
     border-top: 1.5vmax solid var(--trip-orange);
 }
 
+.trip-orange-gradient-left{
+    background: linear-gradient(90deg, rgba(255, 68, 0, 0.7), #f5f5f5 90%);
+}
