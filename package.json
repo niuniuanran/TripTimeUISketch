@@ -6,6 +6,7 @@
   "scripts": {
     "build:css": "tailwind build src/tailwind-src.css -o dist/tailwind-built.css"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niuniuanran/TripTimeUISketch.git"
