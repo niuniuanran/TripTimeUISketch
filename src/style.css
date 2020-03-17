@@ -15,8 +15,8 @@
     --page-background-color: #f5f5f5;
     --page-border-color: #eee;
     --box-shadow-color: #aaa;
-    --decor-font-family: 'Fredericka the Great', cursive;
-    --read-font-family: 'Tajawal', sans-serif;
+    --decor-font-family: 'Secular One', sans-serif;
+    --read-font-family: sans-serif;
     --tag-opacity: 0.2;
     --tag-background-color: white;
 
@@ -64,11 +64,6 @@
     font-family: var(--decor-font-family);
     /*color: var(--primary-text-color);*/
 }
-.page-tag{
-    /*box-shadow: 1px 2px 1px var(--box-shadow-color);*/
-    /*color: var(--primary-text-color);*/
-    /*border-radius: 15px 3px 3px 15px;*/
-}
 
 #calendar-tag .tag-background-img{
     background: url("../asset/calender-tag.jpg");
@@ -102,12 +97,15 @@
 
 .tag-background {
     transition: background-color 0.7s 0s;
+    box-shadow: -1px 2px 5px #888;
 }
 
 .page-body {
     width: var(--page-body-width);
     left: calc(100vw - var(--page-body-width));
     z-index: 1;
+    box-shadow: -1px 2px 5px #888;
+
 }
 
 
@@ -197,4 +195,5 @@
 .map-info-table {
     height: 7em;
 }
+
 
