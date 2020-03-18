@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/tailwind-built.css">
     <link rel="stylesheet" href="src/map-bubble.module.css">
-    <link rel="stylesheet" href="src/info-item.module.css">
+    <link rel="stylesheet" href="src/info-container.module.css">
     <link rel="stylesheet" href="src/page-tag.module.css">
 
 </head>
@@ -76,30 +76,39 @@
             ></i></div>
         </div>
     </div>
-    <div class="infos-container relative">
-        <div class="info-item">
-            <table class="info-table">
+        <div class="place-info-item active-info-item info-item-unfold">
+            <table class="place-info-table">
                 <thead class="info-table-head">
-
+                <tr>
+                    <th>
+                        <i class="fa fa-utensils"></i> Mount Street, CBD
+                    </th>
+                </tr>
                 </thead>
-
+                <tbody>
+                <tr>
+                    <td>Alice, Bob, Chris</td>
+                </tr>
+                <tr>
+                    <td>
+                        12pm, 3/4/2020
+                    </td>
+                </tr>
+                </tbody>
             </table>
-            <div class="info-notes">
+            <div class="place-notes">
+                <div class="place-note">
+
+
+                </div>
 
             </div>
-        </div>
 
-        <div class="info-item">
-            <table class="info-table">
-                <thead class="info-table-head">
 
-                </thead>
+    </div>
 
-            </table>
-            <div class="info-notes">
-
-            </div>
-        </div>
+    <div class="map-summary">
+        Some summary of the map comes here.
 
     </div>
 

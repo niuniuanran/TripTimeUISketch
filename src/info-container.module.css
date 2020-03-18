@@ -1,0 +1,53 @@
+.map-summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4rem);
+    position: relative;
+    top: 4rem;
+
+}
+
+.place-info-item {
+    border: 2px solid var(--trip-orange);
+    display: grid;
+    width: 15em;
+    margin: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    background-color: white;
+    z-index: 3;
+}
+
+.place-info-table {
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: var(--trip-orange);
+    color: white;
+    text-align: center;
+}
+
+.info-item-fold .place-notes {
+    display: none;
+}
+.info-item-unfold .place-notes {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.info-table-head {
+
+}
+
+.info-item-fold {
+    grid-template-rows: 5em 1em;
+    height: 6em;
+}
+.info-item-unfold {
+    grid-template-rows: 5em minmax(1em, 1fr);
+    min-height: fit-content;
+    max-height: 15em;
+}
