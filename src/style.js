@@ -51,9 +51,9 @@ window.addEventListener("load", function () {
     tags.forEach(tag => {
         tag.addEventListener("click", function (e) {
             tags.forEach(inactive => {
-                inactive.classList.remove("active")
+                inactive.classList.remove("active-tag")
             });
-            e.target.classList.add("active");
+            e.target.classList.add("active-tag");
 
         })}
     )

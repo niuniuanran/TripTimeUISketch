@@ -4,12 +4,12 @@
 
 @tailwind utilities;
 
-.active {
+.active-tag {
     left: 2vw !important;
     width: 15vw !important;
     color: white !important;
 }
-.active .tag-background {
+.active-tag .tag-background {
     background-color: var(--trip-orange);
 }
 

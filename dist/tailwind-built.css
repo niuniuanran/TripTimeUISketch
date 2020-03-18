@@ -7453,13 +7453,13 @@ video {
   transition-duration: 1000ms;
 }
 
-.active {
+.active-tag {
   left: 2vw !important;
   width: 15vw !important;
   color: white !important;
 }
 
-.active .tag-background {
+.active-tag .tag-background {
   background-color: var(--trip-orange);
 }
 
@@ -7470,11 +7470,6 @@ video {
 .m-s-3vma {
   margin-left: 3vmax;
   margin-top: 3vmax;
-}
-
-.page-tag-size {
-  height: 11vh;
-  width: 11.5vw;
 }
 
 .trip-orange-gradient-left{
