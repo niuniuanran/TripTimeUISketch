@@ -1,0 +1,82 @@
+.page-tag {
+    height: 11vh;
+    width: 11.5vw;
+}
+
+.page-tags{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    top: calc(60px + 5vh);
+    right:calc(var(--page-body-width) + 2px);
+    min-height: 75vh;
+    z-index: 2;
+    font-size: 1.6vmax;
+    line-height: 11vh;
+    font-family: var(--decor-font-family);
+    /*color: var(--primary-text-color);*/
+}
+
+.calendar-tag .tag-background-img{
+    background: url("../asset/calender-tag.jpg");
+    /*!*    Photo by Estée Janssens on Unsplash *!*/
+
+}
+
+.chat-tag .tag-background-img {
+    background: url("../asset/chat-tag.jpg");
+    /*    Photo by Debby Hudson on Unsplash*/
+}
+
+.tools-tag .tag-background-img {
+    background: url("../asset/tools-tag.jpg");
+    /*Photo by Bastien Hervé on Unsplash*/
+}
+
+.map-tag .tag-background-img {
+    background: url("../asset/map-tag.jpg");
+    /*Photo by Bryan Trogdon on Unsplash*/
+}
+
+.index-tag {
+    margin-bottom: 3vh;
+}
+
+.dashboard-tag .tag-background-img {
+    background: url("../asset/dashboard-tag.jpg");
+    /*Photo by Hudson Hintze on Unsplash*/
+}
+
+.tag-background {
+    transition: background-color 0.7s 0s;
+}
+
+.page-body {
+    width: var(--page-body-width);
+    left: calc(100vw - var(--page-body-width));
+    z-index: 1;
+
+}
+
+
+.tag-background-img {
+    opacity: var(--tag-opacity);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    /*border-radius: 15px 3px 3px 15px;*/
+}
+
+.tag-background {
+    /*border-radius: 15px 3px 3px 15px;*/
+    /*background-color: var(--tag-background-color);*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}

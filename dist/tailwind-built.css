@@ -4282,70 +4282,37 @@ video {
   position: sticky;
 }
 
-.inset-0 {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.inset-off-bar {
+  top: 4rem;
+  right: 4rem;
+  bottom: 4rem;
+  left: 4rem;
 }
 
-.inset-auto {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
+.inset-y-off-bar {
+  top: 4rem;
+  bottom: 4rem;
 }
 
-.inset-y-0 {
-  top: 0;
-  bottom: 0;
+.inset-x-off-bar {
+  right: 4rem;
+  left: 4rem;
 }
 
-.inset-x-0 {
-  right: 0;
-  left: 0;
+.top-off-bar {
+  top: 4rem;
 }
 
-.inset-y-auto {
-  top: auto;
-  bottom: auto;
+.right-off-bar {
+  right: 4rem;
 }
 
-.inset-x-auto {
-  right: auto;
-  left: auto;
+.bottom-off-bar {
+  bottom: 4rem;
 }
 
-.top-0 {
-  top: 0;
-}
-
-.right-0 {
-  right: 0;
-}
-
-.bottom-0 {
-  bottom: 0;
-}
-
-.left-0 {
-  left: 0;
-}
-
-.top-auto {
-  top: auto;
-}
-
-.right-auto {
-  right: auto;
-}
-
-.bottom-auto {
-  bottom: auto;
-}
-
-.left-auto {
-  left: auto;
+.left-off-bar {
+  left: 4rem;
 }
 
 .resize-none {
@@ -7508,29 +7475,6 @@ video {
 .page-tag-size {
   height: 11vh;
   width: 11.5vw;
-}
-
-.map-pin-bubble {
-  position: absolute;
-  border: 2px solid var(--trip-orange);
-  border-radius: 50%;
-  width: 3vmax;
-  height: 3vmax;
-  text-align: center;
-  background-color: rgba(256,256,256,0.7);
-  line-height: 3.3vmax;
-  cursor: pointer;
-}
-
-.map-pin-bubble::after{
-  content:"";
-  width: 0;
-  position: absolute;
-  top: calc(3vmax - 1px);
-  left: calc(50% - 3px);
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-top: 1.5vmax solid var(--trip-orange);
 }
 
 .trip-orange-gradient-left{
@@ -11197,70 +11141,37 @@ video {
     position: sticky;
   }
 
-  .sm\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .sm\:inset-off-bar {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
   }
 
-  .sm\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .sm\:inset-y-off-bar {
+    top: 4rem;
+    bottom: 4rem;
   }
 
-  .sm\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .sm\:inset-x-off-bar {
+    right: 4rem;
+    left: 4rem;
   }
 
-  .sm\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .sm\:top-off-bar {
+    top: 4rem;
   }
 
-  .sm\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .sm\:right-off-bar {
+    right: 4rem;
   }
 
-  .sm\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .sm\:bottom-off-bar {
+    bottom: 4rem;
   }
 
-  .sm\:top-0 {
-    top: 0;
-  }
-
-  .sm\:right-0 {
-    right: 0;
-  }
-
-  .sm\:bottom-0 {
-    bottom: 0;
-  }
-
-  .sm\:left-0 {
-    left: 0;
-  }
-
-  .sm\:top-auto {
-    top: auto;
-  }
-
-  .sm\:right-auto {
-    right: auto;
-  }
-
-  .sm\:bottom-auto {
-    bottom: auto;
-  }
-
-  .sm\:left-auto {
-    left: auto;
+  .sm\:left-off-bar {
+    left: 4rem;
   }
 
   .sm\:resize-none {
@@ -18062,70 +17973,37 @@ video {
     position: sticky;
   }
 
-  .md\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .md\:inset-off-bar {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
   }
 
-  .md\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .md\:inset-y-off-bar {
+    top: 4rem;
+    bottom: 4rem;
   }
 
-  .md\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .md\:inset-x-off-bar {
+    right: 4rem;
+    left: 4rem;
   }
 
-  .md\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .md\:top-off-bar {
+    top: 4rem;
   }
 
-  .md\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .md\:right-off-bar {
+    right: 4rem;
   }
 
-  .md\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .md\:bottom-off-bar {
+    bottom: 4rem;
   }
 
-  .md\:top-0 {
-    top: 0;
-  }
-
-  .md\:right-0 {
-    right: 0;
-  }
-
-  .md\:bottom-0 {
-    bottom: 0;
-  }
-
-  .md\:left-0 {
-    left: 0;
-  }
-
-  .md\:top-auto {
-    top: auto;
-  }
-
-  .md\:right-auto {
-    right: auto;
-  }
-
-  .md\:bottom-auto {
-    bottom: auto;
-  }
-
-  .md\:left-auto {
-    left: auto;
+  .md\:left-off-bar {
+    left: 4rem;
   }
 
   .md\:resize-none {
@@ -24927,70 +24805,37 @@ video {
     position: sticky;
   }
 
-  .lg\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .lg\:inset-off-bar {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
   }
 
-  .lg\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .lg\:inset-y-off-bar {
+    top: 4rem;
+    bottom: 4rem;
   }
 
-  .lg\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .lg\:inset-x-off-bar {
+    right: 4rem;
+    left: 4rem;
   }
 
-  .lg\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .lg\:top-off-bar {
+    top: 4rem;
   }
 
-  .lg\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .lg\:right-off-bar {
+    right: 4rem;
   }
 
-  .lg\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .lg\:bottom-off-bar {
+    bottom: 4rem;
   }
 
-  .lg\:top-0 {
-    top: 0;
-  }
-
-  .lg\:right-0 {
-    right: 0;
-  }
-
-  .lg\:bottom-0 {
-    bottom: 0;
-  }
-
-  .lg\:left-0 {
-    left: 0;
-  }
-
-  .lg\:top-auto {
-    top: auto;
-  }
-
-  .lg\:right-auto {
-    right: auto;
-  }
-
-  .lg\:bottom-auto {
-    bottom: auto;
-  }
-
-  .lg\:left-auto {
-    left: auto;
+  .lg\:left-off-bar {
+    left: 4rem;
   }
 
   .lg\:resize-none {
@@ -31792,70 +31637,37 @@ video {
     position: sticky;
   }
 
-  .xl\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .xl\:inset-off-bar {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
   }
 
-  .xl\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .xl\:inset-y-off-bar {
+    top: 4rem;
+    bottom: 4rem;
   }
 
-  .xl\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .xl\:inset-x-off-bar {
+    right: 4rem;
+    left: 4rem;
   }
 
-  .xl\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .xl\:top-off-bar {
+    top: 4rem;
   }
 
-  .xl\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .xl\:right-off-bar {
+    right: 4rem;
   }
 
-  .xl\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .xl\:bottom-off-bar {
+    bottom: 4rem;
   }
 
-  .xl\:top-0 {
-    top: 0;
-  }
-
-  .xl\:right-0 {
-    right: 0;
-  }
-
-  .xl\:bottom-0 {
-    bottom: 0;
-  }
-
-  .xl\:left-0 {
-    left: 0;
-  }
-
-  .xl\:top-auto {
-    top: auto;
-  }
-
-  .xl\:right-auto {
-    right: auto;
-  }
-
-  .xl\:bottom-auto {
-    bottom: auto;
-  }
-
-  .xl\:left-auto {
-    left: auto;
+  .xl\:left-off-bar {
+    left: 4rem;
   }
 
   .xl\:resize-none {
@@ -34996,3 +34808,6 @@ video {
     transition-duration: 1000ms;
   }
 }
+
+
+

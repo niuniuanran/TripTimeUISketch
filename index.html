@@ -12,38 +12,42 @@
     <script src="./src/draggable.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/tailwind-built.css">
+    <link rel="stylesheet" href="src/map-bubble.module.css">
+    <link rel="stylesheet" href="src/info-item.module.css">
+    <link rel="stylesheet" href="src/page-tag.module.css">
+
 </head>
 <body class="m-0 p-0 relative">
 
-<div class="top-bar trip-orange-gradient-left text-black">
-    <span class="top-bar-span text-white text-2xl" id="logo-span">TripTime Logo</span>
-    <span class="top-bar-span text-black">Some | top | bar | items</span>
+<div class="top-bar trip-orange-gradient-left text-black fixed w-screen top-0 flex flex-row h-16 z-50">
+    <span class="top-bar-span text-white text-2xl pl-8" id="logo-span">TripTime Logo</span>
+    <span class="top-bar-span text-black pr-3 text-lg">Some | top | bar | items</span>
 </div>
 
 <div class="nav-bar page-tags fixed">
-    <div class="page-tag page-tag-size page-tag-size relative cursor-pointer index-tag border-trip-orange" id="dashboard-tag">
+    <div class="page-tag relative cursor-pointer index-tag border-trip-orange dashboard-tag">
         <span class="nav-span">Dashboard</span>
         <div class="tag-background-img rounded-l-full"></div>
         <div class="tag-background trip-shadow bg-white	absolute rounded-l-full"></div>
     </div>
-    <div class="page-tag page-tag-size page-tag-size relative cursor-pointer active border-trip-orange" id="map-tag">
+    <div class="page-tag relative cursor-pointer active border-trip-orange map-tag">
         <span class="nav-span">Map</span>
         <div class="tag-background-img rounded-l-full"></div>
         <div class="tag-background trip-shadow bg-white	absolute rounded-l-full"></div>
     </div>
 
-    <div class="page-tag page-tag-size page-tag-size relative cursor-pointer border-trip-orange" id="calendar-tag">
+    <div class="page-tag relative cursor-pointer border-trip-orange calendar-tag">
         <span class="nav-span">Calendar</span>
         <div class="tag-background-img rounded-l-full"></div>
         <div class="tag-background trip-shadow bg-white	absolute rounded-l-full"></div>
     </div>
-    <div class="page-tag page-tag-size page-tag-size relative cursor-pointer border-trip-orange" id="chat-tag">
+    <div class="page-tag relative cursor-pointer border-trip-orange chat-tag">
         <span class="nav-span">Chat</span>
         <div class="tag-background-img rounded-l-full"></div>
         <div class="tag-background trip-shadow bg-white	absolute rounded-l-full"></div>
 
     </div>
-    <div class="page-tag page-tag-size page-tag-size relative cursor-pointer border-trip-orange" id="tools-tag">
+    <div class="page-tag relative cursor-pointer border-trip-orange tools-tag">
         <span class="nav-span">Tools</span>
         <div class="tag-background-img rounded-l-full"></div>
         <div class="tag-background trip-shadow bg-white	absolute rounded-l-full"></div>
@@ -53,8 +57,11 @@
 <div class="page-body active-page bg-trip-gray-bright fixed h-screen trip-shadow" id="map-page">
 
     <div id="map-container">
-        <div id="map" class="relative w-full h-auto m-s-3vmax ml-5">
+        <div id="map" class="relative w-full h-auto m-s-3vmax ml-6">
             <img src="asset/map.png" alt="map" id="map-img" class="w-full h-auto pointer-events-none">
+            <div class="absolute top-0 left-0 font-bold bg-white">
+                This is where the map goes. Ideally it will come with a flatter theme.
+            </div>
             <div class="map-pin-bubble draggable" style="top: 50%; left: 50%"><i
                     class="fas fa-democrat local-event-map-pin draggable map-pin-icon"
             ></i></div>
@@ -69,50 +76,18 @@
             ></i></div>
         </div>
     </div>
-    <div class="info-container relative">
-        <div class="map-place-info map-sticky-note sticky-note">
-            <table class="map-info-table basic-info">
-                <thead class="map-info-thead">
-                <tr class="map-info-head-row place-info">
-                    <th><i class="fas fa-hiking place-icon"></i><span class="place-name pl-1">Customer place name</span></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="place-time place-info">
-                    <td>4/3/2020 8:00 am
-                    <td>
-                </tr>
-                <tr class="place-people">
-                    <td>Mary, Peter and Tom are going</td>
-                </tr>
-                </tbody>
+    <div class="infos-container relative">
+        <div class="info-item grid-info-item">
+            <table class="info-table">
+
             </table>
-            <div class="added-notes-container map-added-notes-container">
-                <div class="added-note map-added-note m-3">
-                    <div class="added-note-author map-added-note-author">
-                        Alice:
-                    </div>
-                    <div class="added-note-content map-added-note-content">
-                  These notes will be fetched from the database and rendered here
+            <div class="info-notes scrolling-auto">
 
-                    </div>
-                    <div class="added-note map-added-note">
-                        <div class="added-note-author map-added-note-author">
-                            <span class="inline-avatar-span"></span> Bob
-                        </div>
-                        <div class="added-note-content map-added-note-content">
-                            We will drive two cars to each of the end.
-                            d it to make a type specimen book. It has survived not only five centuries, but also the
-                            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        </div>
-                    </div>
-
-                </div>
             </div>
+        </div>
 
     </div>
-    </div>
+
 </div>
 </body>
 </html>
